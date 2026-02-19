@@ -1,12 +1,12 @@
 public class MainClient {
 
     public static void main(String[] args) {
-        Client client = new Client("Mario", "blu");
+        Client Mario = new Client("Mario", "blu");
 
-        if (client.connetti("localhost", 5000) == 0) {
-            client.scrivi("Ciao server!");
-            client.leggi();
-            client.chiudi();
+        if (Mario.connetti("localhost", 5000) == 0) {
+            Mario.scrivi("Ciao gennarino uaglio!");
+            Mario.leggi();
+            Mario.chiudi();
         }
     }
 }

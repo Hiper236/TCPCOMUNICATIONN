@@ -5,7 +5,7 @@ public class MainServer {
 
         server.attendi();
         server.leggi();
-        server.scrivi("Ciao client!");
+        server.scrivi("Ciao Mario!");
         server.chiudi();
         server.termina();
     }

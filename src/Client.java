@@ -1,5 +1,7 @@
 import java.io.*;
+import java.net.ServerSocket;
 import java.net.Socket;
+
 
 public class Client {
 
@@ -46,6 +48,14 @@ public class Client {
     }
 
     public void chiudi() {
+        try {
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void termina() {
         try {
             socket.close();
         } catch (IOException e) {
